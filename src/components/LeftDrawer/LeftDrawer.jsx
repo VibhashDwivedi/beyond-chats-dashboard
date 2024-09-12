@@ -117,6 +117,7 @@ const LeftDrawer = ({ isOpened, toggleLeftNav, navOptions }) => {
 										minWidth: 0,
 										mr: isOpened ? 3 : "auto",
 										justifyContent: "center",
+										
 									}}
 								>
 									<Icon

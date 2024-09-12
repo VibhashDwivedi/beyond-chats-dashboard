@@ -609,7 +609,7 @@ const MindMap = () => {
 						sx={{
 							width: "100%",
 							minWidth: "960px",
-							color: "var(--text-color)",
+							color: "var(--text-color)"
 						}}
 					>
 						<DataGrid
@@ -636,9 +636,17 @@ const MindMap = () => {
 							hideFooter
 							getRowHeight={() => "auto"}
 							sx={{
+								  "& .MuiDataGrid-columnHeader": {
+									"&:focus": {
+									  outline: "none", 
+									},
+								  },
 								"& .MuiDataGrid-cell": {
-									color: "var(--text-color)", 
-								},
+									color: "var(--text-color)",
+									"&:focus": {
+									  outline: "none", 
+									},
+								  },
 								"& .MuiDataGrid-columnHeaderTitle": {
 									color: "var(--text-color)",
 								},
