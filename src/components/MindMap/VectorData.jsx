@@ -17,7 +17,6 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: "none",
 		marginBottom: "1rem",
 		color: "var(--text-color)",
-		
 	},
 
 	source_type_container: {
@@ -25,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
 		width: "100%",
 		justifyContent: "flex-start",
 		alignItems: "center",
-		
 	},
 	source_type: {
 		fontSize: "0.6rem",
@@ -70,7 +68,7 @@ const VectorData = ({ data, handleOpenEditDialog, handleDelete }) => {
 			<Box className={classes.source_type_container}>
 				<Typography
 					variant="caption"
-					sx={{ color:"var(--primary2"}}
+					sx={{ color: "var(--primary2" }}
 					className={classes.source_type}
 				>
 					{data?.metadata?.source_type ?? "Unknown Source"}
@@ -79,7 +77,7 @@ const VectorData = ({ data, handleOpenEditDialog, handleDelete }) => {
 
 			<Box className={classes.footer_container}>
 				<Box className={classes.details_container}>
-					<Typography variant="caption" >
+					<Typography variant="caption">
 						<a
 							href={data?.metadata?.source_url ?? "#"}
 							target="_blank"
@@ -89,7 +87,7 @@ const VectorData = ({ data, handleOpenEditDialog, handleDelete }) => {
 							View Source
 						</a>
 					</Typography>
-					<Typography variant="subtitle1" sx={{ color:"var(--primary2)"}}>
+					<Typography variant="subtitle1" sx={{ color: "var(--primary2)" }}>
 						{new Intl.RelativeTimeFormat("en", {
 							numeric: "auto",
 						}).format(-new Date(data?.metadata?.created_at), "days")}
@@ -98,15 +96,19 @@ const VectorData = ({ data, handleOpenEditDialog, handleDelete }) => {
 
 				<Box className={classes.actions_container}>
 					<IconButton size="medium" onClick={() => handleOpenEditDialog(data)}>
-						<Edit sx={{ color: "var(--primary2) !important"}} fontSize="small" />
+						<Edit
+							sx={{ color: "var(--primary2) !important" }}
+							fontSize="small"
+						/>
 					</IconButton>
 					<IconButton
 						size="medium"
 						onClick={() => handleDelete(data?.vector_id)}
-						
-						
 					>
-						<Delete sx={{ color: "var(--primary2) !important"}}  fontSize="small" />
+						<Delete
+							sx={{ color: "var(--primary2) !important" }}
+							fontSize="small"
+						/>
 					</IconButton>
 				</Box>
 			</Box>

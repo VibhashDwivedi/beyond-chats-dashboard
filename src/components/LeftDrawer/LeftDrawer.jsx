@@ -66,21 +66,20 @@ const LeftDrawer = ({ isOpened, toggleLeftNav, navOptions }) => {
 		<Drawer
 			variant="permanent"
 			anchor="left"
-			
 			open={isOpened}
 			onClose={toggleLeftNav}
 			sx={{
-				'& .MuiDrawer-paper': {
-				  backgroundColor: 'var(--background2)', 
+				"& .MuiDrawer-paper": {
+					backgroundColor: "var(--background2)",
 				},
-			  }}
+			}}
 		>
 			<Tooltip
 				title={isOpened ? "Close Left Drawer" : "Open Left Drawer"}
 				arrow
 			>
 				<DrawerHeader>
-					<IconButton onClick={toggleLeftNav} sx={{ color:"var(--primary2)"}}>
+					<IconButton onClick={toggleLeftNav} sx={{ color: "var(--primary2)" }}>
 						{isOpened ? <ChevronLeftIcon /> : <MenuIcon />}
 					</IconButton>
 				</DrawerHeader>
@@ -93,15 +92,12 @@ const LeftDrawer = ({ isOpened, toggleLeftNav, navOptions }) => {
 						arrow
 						placement="right"
 						key={title}
-						
 					>
 						<ListItem
 							disablePadding
 							sx={{
 								display: "block",
-								color : "var(--text-color)",
-								// color: "var(--text-color)" ,
-								
+								color: "var(--text-color)",
 							}}
 							className={`nav-option-${index}`}
 						>
@@ -123,7 +119,11 @@ const LeftDrawer = ({ isOpened, toggleLeftNav, navOptions }) => {
 										justifyContent: "center",
 									}}
 								>
-									 <Icon sx={{ color: isActive ? "var(--text-color)" : "var(--primary2)" }} />
+									<Icon
+										sx={{
+											color: isActive ? "var(--text-color)" : "var(--primary2)",
+										}}
+									/>
 								</ListItemIcon>
 								<ListItemText
 									primary={title}

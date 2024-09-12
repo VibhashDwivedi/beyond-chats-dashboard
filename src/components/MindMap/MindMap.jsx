@@ -414,7 +414,7 @@ const MindMap = () => {
 				<Box className={classes.action_box}>
 					<Button
 						style={{
-							color: "var(--text-color)",
+							color: "var(--white)",
 							backgroundColor: "var(--button-color)",
 						}}
 						variant="contained"
@@ -427,7 +427,7 @@ const MindMap = () => {
 					</Button>
 					<Button
 						style={{
-							color: "var(--text-color)",
+							color: "var(--white)",
 							backgroundColor: "var(--button-color)",
 						}}
 						variant="contained"
@@ -536,7 +536,7 @@ const MindMap = () => {
 								color: "var(--text-color)",
 							},
 							"& .MuiSelect-icon": {
-								color: "var(--text-color)", // Ensure the dropdown icon color is correct
+								color: "var(--text-color)", 
 							},
 						}}
 						size="small"
@@ -566,7 +566,7 @@ const MindMap = () => {
 						variant="contained"
 						sx={{ m: 1 }}
 						style={{
-							color: "var(--text-color)",
+							color: "var(--white)",
 							backgroundColor: "var(--button-color)",
 						}}
 					>
@@ -605,7 +605,13 @@ const MindMap = () => {
 						</Suspense>
 					)
 				) : (
-					<Box sx={{ width: "100%", minWidth: "960px" , color: "var(--text-color)" }}>
+					<Box
+						sx={{
+							width: "100%",
+							minWidth: "960px",
+							color: "var(--text-color)",
+						}}
+					>
 						<DataGrid
 							rows={data}
 							columns={columns}
@@ -623,6 +629,7 @@ const MindMap = () => {
 								loadingOverlay: {
 									title: "Loading...",
 								},
+								
 							}}
 							disableSelectionOnClick
 							disableRowSelectionOnClick
@@ -630,12 +637,15 @@ const MindMap = () => {
 							getRowHeight={() => "auto"}
 							sx={{
 								"& .MuiDataGrid-cell": {
-								  color: "var(--text-color)", // Set the text color for data cells
+									color: "var(--text-color)", 
 								},
 								"& .MuiDataGrid-columnHeaderTitle": {
-								  color: "var(--text-color)", // Set the text color for column headers
+									color: "var(--text-color)",
 								},
-							  }}
+								"& .MuiButtonBase-root.MuiIconButton-root": {
+									color: 'var(--text-color)', // Custom color for filter button
+								  },
+							}}
 						/>
 					</Box>
 				)}
@@ -647,17 +657,16 @@ const MindMap = () => {
 						sx={{
 							m: "10px auto",
 							"& .MuiPaginationItem-root": {
-							  color: "var(--text-color)", // Default text color
+								color: "var(--text-color)", 
 							},
 							"& .MuiPaginationItem-root.Mui-selected": {
-							  backgroundColor: "var(--primary2)", // Background color for selected item
-							  color: "var(--text-color)", // Text color for selected item
+								backgroundColor: "var(--primary2)", 
+								color: "var(--text-color)", 
 							},
 							"& .MuiPaginationItem-root:hover": {
-							  backgroundColor: "var(--primary2)", // Background color on hover
+								backgroundColor: "var(--primary2)", 
 							},
-						  }}
-
+						}}
 						renderItem={(item) => {
 							const searchParams = new URLSearchParams(location.search);
 							searchParams.set("page", item.page);

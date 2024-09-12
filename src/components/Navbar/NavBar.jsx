@@ -185,7 +185,7 @@ const NavBar = (props) => {
 					{access_token && isMobile ? (
 						<Box>
 							<IconButton onClick={props.toggleLeftNav}>
-								<MenuIcon sx={{ color: "var(--primary2)"}} />
+								<MenuIcon sx={{ color: "var(--primary2)" }} />
 							</IconButton>
 						</Box>
 					) : null}
@@ -249,11 +249,14 @@ const NavBar = (props) => {
 
 								{!isMobile ? (
 									<Button
-                                        style={{ color: "var(--primary2)", borderColor: "var(--primary2)" }}
+										style={{
+											color: "var(--primary2)",
+											borderColor: "var(--primary2)",
+										}}
 										variant="outlined"
 										onClick={() => props.setShowStartTutorial(true)}
 									>
-										<Typography variant="h6" >Guided Tour</Typography>
+										<Typography variant="h6">Guided Tour</Typography>
 									</Button>
 								) : null}
 								{/* ORG Selector */}
