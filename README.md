@@ -24,8 +24,13 @@ to build for production use `npm run build`
 
 **Mobile View**
 
-![](https://github.com/VibhashDwivedi/beyond-chats-dashboard/blob/main/screenshots/Screenshot%20(353).png?raw=true)
+![](https://github.com/VibhashDwivedi/beyond-chats-dashboard/blob/main/screenshots/1%20.jpg?raw=true)
 
-![](https://github.com/VibhashDwivedi/beyond-chats-dashboard/blob/main/screenshots/Screenshot%20(353).png?raw=true)
+![](https://github.com/VibhashDwivedi/beyond-chats-dashboard/blob/main/screenshots/2%20.jpg?raw=true)
 
-![](https://github.com/VibhashDwivedi/beyond-chats-dashboard/blob/main/screenshots/Screenshot%20(353).png?raw=true)
+![](https://github.com/VibhashDwivedi/beyond-chats-dashboard/blob/main/screenshots/2%20.jpg?raw=true)
+
+### Deployed Link
+[Live Demo](https://beyond-chats-dashboard.vercel.app/null/mind-map)
+
+
