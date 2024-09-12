@@ -1,4 +1,4 @@
-## BeyondChats Dashboard App
+## BeyondChats Dashboard App 
 
 ### setup
 
@@ -8,9 +8,10 @@ install the packages
 ```
 npm i -f
 ```
-
-We are currently deployed on Netlify
-
 during Development use `npm run start`
 
 to build for production use `npm run build`
+
+## screenshots
+
+Dektop View
